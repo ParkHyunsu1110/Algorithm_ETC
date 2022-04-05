@@ -1,0 +1,14 @@
+package Baekjoon;
+
+import java.util.*;
+
+public class Q15726 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt(), b = sc.nextInt(), c = sc.nextInt();
+		int case1 = a / b * c, case2 = a * b / c;
+		int result = case1 < case2 ? case2 : case1;
+		System.out.println(result);
+	}
+}
